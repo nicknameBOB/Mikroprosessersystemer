@@ -1,0 +1,81 @@
+
+hilke fire instruksjkon hovedtyper har vi i AVR?
+	-Aritmetisk\logisk
+	-Dataoverføring
+	-Bit og bit-test
+	-Hoppe instruksjoner(JMP)
+
+hvilke minetyper har vi?
+	~~ S-RAM, lagring av variabler og stack samt genrelle regiset og i\o register, volatil (mister innholdet ved strømbrud)
+	~~ EEPROM, til konstanter og status,ikke volatil(beholder innhold ved strømbrud)
+	~~ Flash, programminne, ikke volatil(beholder innhold ved strømbrud)
+
+hva er UART?
+	~~ En komunikasjonsprotokoll
+	~~ Asynkron, klokken overøres ikke melom sender motager(master-slave)
+	~~ Universal Asyncronus Reciver\transmitter
+	~~ Kan Simplex(enveis), Halv duplex(toveis,en vei om gangen) og full duplex(toveis, begge veier samtidig).
+
+Hva er RISC?
+	~~ Det er en mikrochip arkitektur(en type mikroprosessor), Reduced intrruction set computer.
+	~~ brukes av blant annet ARM,AVR,PowerPC og SPARC.
+	~~ Enklere maskinvare men mer kompleskt programvare
+
+Hva er CISC?
+	~~ Der er en mikrochip arkitektur(en type mikroprosessor), Complex intrruction set computer.
+	~~ Enklere programvare men mer komplekst maskinvare
+
+Hva er en AC(analog komarator)?
+	~~ samenlingner to analoge inganger(pinner), eventuelt med en referangse.
+	~~ gir en rask respons, sjekker om pluss ingangen er hyere en minusingangen, gir høy verdi ut, og motsat vis ikke.
+
+Hva er en ADC(Analog to Digital Convereter)?
+	~~ Konverterer ingangsverdien til et digitalkt signal i forhold til referangsen. 
+
+Hva er forskjelden på en funksjon og en avbrudsrutine?
+	Funksjon:
+		~~ Funksjoenr kalles fra programmet og kan ha med seg parametere inn og returenre verdi.
+		~~ Lav prioritering, prioriteres etter avbrud.
+	Avbrudsrutine:
+		~~ Avbrudd kalles av Maskinvaret(hardware) og må returnere data som global variabler.
+		~~ Høy prioritering. prioriteres før funkjsoner.
+
+Hva er fordelen med å bruke timerer til å holde orden på tid framfor cpu?
+	ved å bruke timere så firgir du prosessoren så den kan gjøre andre ting samtidig. 
+	kan også holde tiden mer nøyaktig en cpu
+
+
+Hva menes med Aktiv Høy go Akiv Lav?
+	Aktiv Høy:
+		~~ spenningen ligger på Vcc og er "høy".
+		~~ en lysdiode vil da lyse når nivået ut er Høyt.
+		~~ en knapp vil da gi høyt nivå inn når den trykkes. 
+	
+	Aktiv Lav:
+		~~ spenningsverdien ligger på jord og er "Lav".
+		~~ en lysdiode vil da lyse når nivået er lavt, Lavt nivå ut.
+		~~ en knapp vil gi lavt nivå inn når den trykkes.(vis det er pullup så blir det høyt når trykt)
+
+
+Hva er en programteller(PC) og når brukes denn?
+	~~ Program Counter(PC)  
+	~~ holder orden på hvor neste instruksjon hentes i program minne.
+	~~ endres av hoppinstreuksjoner(JMP), subrutiner og avbrudd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
